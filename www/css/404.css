@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    max-width: 100%;
+    background-image: url("../img/paper-bg.jpg");
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3.1em;
+    line-height: 1em;
+    color: #dc1d1c;
+    margin: 30px 0 15px 0;
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    margin: 30px 0 10px 0;
+
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+#cover-image .curve { 
+    width: 35%;
+    height: auto;
+    min-width: 250px;
+    float: right;
+    margin: 3rem 5rem 0.5rem 3rem;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 25px #aaa;
+}
+
+.main-text {
+    width: 65%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.search {
+    width: 80%;
+    position: relative
+}
+
+.search-term {
+    width: 100%;
+    border: 3px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-button {
+    position: absolute;
+    top: 0; 
+    right: -30px;
+    width: 40px;
+    height: 33px;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap{
+    width: 55%;
+    margin-top: 30px;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
