@@ -204,9 +204,11 @@
         <h3>What should you do now?</h3>
         <p>Please <em>do not</em> freak out. Instead of abandoning all hope you can use your browser's back button to return to where you were or head straight to our <a href="http://www.nydailynews.com/">home page</a> to start fresh. You could also try searching for what you’re looking for with the handy box below.</p>
     
-        <div class="wrap"><form class="search">
-            <input type="text" class="search-term" placeholder="What are you looking for?">
-            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+        <div class="wrap">
+        <form class="search" method="get" _lpchecked="1">
+            <input type="text" class="search-term" placeholder="What are you looking for?" onkeyup="javascript:if(event.keyCode==13){search_action();}">
+            <input type="hidden" name="nydn-search-url" id="nydn-search-url" value="site">
+            <button type="submit" class="search-button" onclick="search_action();"><i class="fa fa-search"></i></button>
         </form></div>
 
         <h3>Is that all there is?</h3>
@@ -220,10 +222,7 @@
         <!-- CUSTOM CSS GOES HERE-->
     <link rel="stylesheet" type="text/css" href="css/404.css">
 
-        <!-- CUSTOM JS GOES HERE-->
-        <script src="../../js/jquery.min.js"></script>
-        <script src="../../js/jquery.sticky.js"></script>
-        <script src="../../js/scripts.js?v2"></script>
+        
   </div>  
 
 <div id="ra-bp">
