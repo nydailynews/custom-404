@@ -205,10 +205,10 @@
         <p>Please <em>do not</em> freak out. Instead of abandoning all hope you can use your browser's back button to return to where you were or head straight to our <a href="http://www.nydailynews.com/">home page</a> to start fresh. You could also try searching for what you’re looking for with the handy box below.</p>
     
         <div class="wrap">
-        <form class="search" method="get" _lpchecked="1">
-            <input type="text" class="search-term" placeholder="What are you looking for?" onkeyup="javascript:if(event.keyCode==13){search_action();}">
+        <form class="search" method="get" name="betterSearch" _lpchecked="1" action="http://www.nydailynews.com/search-results/search-results-7.113">
+            <input type="text" name="q" class="search-term" placeholder="What are you looking for?" onkeyup="javascript:if(event.keyCode==13){document.betterSearch.submit();}">
             <input type="hidden" name="nydn-search-url" id="nydn-search-url" value="site">
-            <button type="submit" class="search-button" onclick="search_action();"><i class="fa fa-search"></i></button>
+            <button type="submit" class="search-button" onclick="document.betterSearch.submit();"><i class="fa fa-search"></i></button>
         </form></div>
 
         <h3>Is that all there is?</h3>
