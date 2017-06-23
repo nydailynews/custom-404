@@ -5,6 +5,10 @@ body {
     background-image: url("../img/paper-bg.jpg");
 }
 
+#rh-subnav {
+    display: none;
+}
+
 article {
     margin: 50px;
 }
