@@ -5,4 +5,5 @@ Edit the httpd.conf file and in the `<Directory>` entry for your server add thes
 ```
     HeaderName /404/header.html
     ReadmeName footer.html
+    IndexOptions +SuppressHTMLPreamble
 ```
