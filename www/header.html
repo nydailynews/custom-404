@@ -100,6 +100,7 @@
     <script src="http://interactive.nydailynews.com/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css">
     <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css">
+    <link rel="stylesheet" type="text/css" href="/404/css/404.css">
 
     <script>var nav_params = {section: 'projects', url: 'http://interactive.nydailynews.com/project/'};</script>
     <script src="http://interactive.nydailynews.com/library/vendor-nav/vendor-include.js" defer></script>
@@ -115,3 +116,32 @@
 <main>
     <article>
         <div>
+		<h1>Index of <span id="path"></span></h1>
+<script>
+document.getElementById('path').innerHTML = document.location.pathname;
+</script>
+<style>
+article {
+	max-width: 800px;
+	margin: auto;
+}
+article h1 {
+	color: #444;
+}
+article ul {
+	margin-left: 2.5em;
+}
+article li {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.ad > span {
+    font-size:10px;
+    color:#999;
+    font-family:sans-serif;
+}
+</style>
