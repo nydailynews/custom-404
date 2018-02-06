@@ -55,8 +55,8 @@
     <!-- ADOBE ANALYTICS -->
     <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Open%20Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
-    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
+    <link href='//fonts.googleapis.com/css?family=Open%20Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
+    <script data-main="//www.nydailynews.com/nydn/js/rh.js?r=20170405001" src="//www.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
       
     <script>
         var nydn = nydn || {
@@ -76,19 +76,36 @@
     </script>
     
     <!-- ADS-START -->
-    <script onload="nydn_ads('one');" src="http://interactive.nydailynews.com/includes/ads/ads.js"></script>
+    <script onload="nydn_ads('one');" src="/includes/template/template.js"></script>
     <!-- ADS-END -->
 
-    <script src="http://interactive.nydailynews.com/js/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css">
-    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css">
-    <link rel="stylesheet" type="text/css" href="/404/css/404.css">
+    <script src="/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="//www.nydailynews.com/nydn/c/rh.css">
+    <link rel="stylesheet" href="//www.nydailynews.com/nydn/c/ra.css">
+    <link rel="stylesheet" href="/404/css/404.css">
 
-    <script>var nav_params = {section: 'projects', url: 'http://interactive.nydailynews.com/project/'};</script>
-    <script src="http://interactive.nydailynews.com/library/vendor-nav/vendor-include.js" defer></script>
+    <script>var nav_params = {section: 'projects', url: '//interactive.nydailynews.com/project/'};</script>
+    <script src="/library/vendor-nav/vendor-include.js" defer></script>
 </head>
 
 <body id="nydailynews" data-section="nydailynews" data-subsection="NY Daily News">
+
+    <script>
+        var el = document.createElement('script');
+        el.type = 'application/ld+json';
+        el.text = JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Index of " + document.location.pathname,
+            "url": document.location.href,
+            "thumbnailUrl": "http://interactive.nydailynews.com/404/img/404-roadclose.jpg",
+            "dateCreated": "2018-02-05T06:00:00Z",
+            "articleSection": "Interactive",
+            "creator": ["Interactive", "Joe Murphy", "Interactive Project"],
+            "keywords": ["interactive project","interactive","index"]
+        });
+        document.querySelector('head').appendChild(el);
+    </script>
 
 <!-- SITEHEADER-START -->
 <header id="templateheader"></header>
