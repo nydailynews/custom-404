@@ -21,6 +21,7 @@
     <meta name="news_keywords" content="" />
 
     <!-- PARSELY -->
+    <!--
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -34,6 +35,7 @@
             "keywords": ["interactive project","interactive","index"]
         }
     </script>
+    -->
 
     <!-- NO NEED TO FILL -->
     <meta name="twitter:domain" content="http://interactive.nydailynews.com"/>
@@ -91,11 +93,12 @@
 <body id="nydailynews" data-section="nydailynews" data-subsection="NY Daily News">
 
     <script>
+        // NEW PARSELY
         var el = document.createElement('script');
         el.type = 'application/ld+json';
         el.text = JSON.stringify({
             "@context": "http://schema.org",
-            "@type": "NewsArticle",
+            "@type": "WebPage",
             "headline": "Index of " + document.location.pathname,
             "url": document.location.href,
             "thumbnailUrl": "http://interactive.nydailynews.com/404/img/404-roadclose.jpg",
