@@ -1,5 +1,5 @@
 
-body {
+body#nydailynews {
     height: 100%;
     max-width: 100%;
     background-image: url("../img/paper-bg.jpg");
