@@ -9,11 +9,11 @@ body#nydailynews {
     display: none;
 }
 
-article {
+article#error404 {
     margin: 50px;
 }
 
-h1 {
+ #error404 h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 3.1em;
     line-height: 1em;
@@ -21,14 +21,14 @@ h1 {
     margin: 30px 0 15px 0;
 }
 
-h3 {
+#error404 h3 {
     font-family: 'Open Sans Condensed', sans-serif;
     text-transform: uppercase;
     margin: 30px 0 10px 0;
 
 }
 
-p {
+#error404 p{
     font-family: 'PT Serif', serif;
     font-size: 16px;
     line-height: 23px;
