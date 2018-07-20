@@ -93,7 +93,9 @@
     <script onload="nydn_ads('one');" src="/includes/template/template.js"></script>
     <!-- ADS-END -->
 
+    <!--
     <script src="/js/jquery.min.js"></script>
+    -->
     <link rel="stylesheet" href="//interactive.nydailynews.com/nydn/c/rh.css">
     <link rel="stylesheet" href="//interactive.nydailynews.com/nydn/c/ra.css">
     <link rel="stylesheet" href="//interactive.nydailynews.com/404/css/404.css">
@@ -114,7 +116,7 @@
             "headline": "Index of " + document.location.pathname,
             "url": document.location.href,
             "thumbnailUrl": "http://interactive.nydailynews.com/project/central-park-five/img/central-park-five.jpg",
-            "dateCreated": "2018-07-13T06:00:00Z",
+            "dateCreated": "2018-07-18T06:00:00Z",
             "articleSection": "Manhattan",
             "creator": ["Interactive", "Joe Murphy", "Interactive Project"],
             "keywords": ["interactive project","interactive","index","central park five"]
@@ -131,9 +133,11 @@
     <article>
         <div>
 		<h1>Central Park Five documents: <span id="path"></span></h1>
-		<p>New York City officials released 200,000 pages of documents, 95 depositions and other records as part of its $41 million settlement with the group of wrongly convicted suspects known as the Central Park Five.</p>
+		<p>
+			New York City officials released 200,000 pages of documents, 95 depositions and other records as part of its $41 million settlement with the group of wrongly convicted suspects known as the Central Park Five.
+		</p>
 <script>
-document.getElementById('path').innerHTML = document.location.pathname.replace('/project/central-park-five/documents', '.');
+document.getElementById('path').innerHTML = document.location.pathname.replace('/project/central-park-five/original-investigation-and-prosecution/', '').replace(/-/g, ' ').replace('/', '');
 </script>
 <style>
 article {
